@@ -1,0 +1,538 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    font-size: 20px;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+/* header starts */
+header aside{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    display: none;
+}
+aside .toggle-btn{
+    cursor: pointer;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+.mybrand img{
+    transition-duration: 500ms;
+}
+.mybrand img:hover{
+    transform: scale(1.05);
+}
+.mybrand p{
+    font-size: 0.7rem;
+}
+.mybrand p i{
+    color: red;
+    font-weight: 600;
+}
+.contact-info figure figcaption{
+    display: inline;
+    font-size: 0.8rem;
+    color: brown;
+}
+figcaption span{
+    color: grey;
+    margin-right: 10px;
+}
+nav .inline{
+    display: flex;
+}
+.user .signin-register{
+    display: flex;
+    /* flex-flow: f-direction f-wrap; */
+    flex-flow: row wrap;
+}
+.signin-register li{
+    list-style-type: none;
+    margin-right: 20px;
+}
+.signin-register li a{
+    text-decoration: none;
+    padding: 5px;
+    background-color: #dbdbdb;
+    border-radius: 50px;
+    color: grey;
+    font-size: 0.8rem;
+}
+nav .navigation{
+    display: flex;
+    padding: 0;
+}
+.navigation li{
+    list-style-type: none;
+    margin-right: 2px;
+    padding: 15px 28px;
+    background-image: linear-gradient(#fff, #f0f0f0);
+    border-bottom: 1px solid grey;
+}
+.navigation li a{
+    text-decoration: none;
+    color: gray;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* header ends */
+
+/* section-carousel starts */
+.section-carousel{
+    width: 100%;
+    position: relative;
+    top: -15px;
+}
+
+.carousel-item img{
+    width: 100%;
+}
+
+.bottom-section a img{
+    width: 100%;
+    border: 2px solid #000;
+    transition-duration: 500ms;
+}
+.bottom-section a img:hover{
+    transform: scaleY(1.04);
+}
+
+/* section-carousel ends */
+
+/* middle-section starts */
+.middle-section .left img{
+    transition-duration: 500ms;
+    width: 58%;
+}
+.middle-section .left h6{
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.middle-section img:hover{
+    transform: rotate(360deg);
+}
+.middle-section .box1 a img:hover{
+    content: url('../img/pic10.gif');
+}
+.box1 p, .box2, p{
+    font-size: 0.8rem;
+}
+.box2 a img:hover{
+    content: url('../img/pic11.gif');
+}
+.box3 a img:hover{
+    content: url('../img/pic12.gif');
+}
+.box4 a img:hover{
+    content: url('../img/pic13.gif');
+}
+.box5 a img:hover{
+    content: url('../img/pic14.gif');
+}
+
+.middle-section .right h5{
+    font-weight: 600;
+    color: red;
+    animation-name: h5color;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes h5color {
+    0%{color: red;}
+    10%{color: green;}
+    20%{color: blue;}
+    30%{color: orange;}
+    40%{color: darkgreen;}
+    0%{color: purple;}
+    0%{color: coral;}
+    0%{color: cyan;}
+    0%{color: violet;}
+    0%{color: cornflowerblue;}
+}
+.middle-section .right img{
+    transition-duration: 500ms;
+    transition-property: transform;
+    width: 38%;
+}
+.middle-section .right img:hover{
+    transform: scale(1.2);
+}
+.middle-section .right h6{
+    font-weight: 600;
+    margin-top: 8px;
+}
+.middle-section .right span p{
+    font-size: 1.2rem;
+    color: grey;
+}
+.middle-section .right p{
+    color: red;
+    font-size: 1rem;
+    margin-top: -4px;
+}
+
+/* middle-section ends */
+
+/* two-section starts */
+.container{
+    background-color: #fff;
+}
+.two-section .box-1, .two-section .box-2{
+    display: flex;
+    align-items: center;
+    border: 2px solid grey;
+    border-radius:10px;
+    padding: 38px 0;
+    transition-duration: 500ms;
+    transition-property: border-width;
+    transition-delay: -100s;
+    transition-timing-function: linear;
+}
+.two-section .box-2{
+    padding: 46px 0;
+}
+.two-section .box-1:hover, .two-section .box-2:hover{
+    border-width: 0px;
+}
+.two-section .img{
+    display: inline-block;
+    width: 28%;;
+}
+.two-section .img img{
+    width: 100%;
+}
+.two-section .text{
+    display: inline-block;
+    width: 68%;
+}
+.two-section .text h5{
+    font-weight: 600;
+}
+.two-section .text h6{
+    font-size: 1.1rem;
+}
+
+/* two-section ends */
+
+
+
+
+
+/* outfit-section starts */
+.outfit{
+    margin: 80px 0;
+}
+.outfit h2{
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    animation-name: h5color;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.outfit .formen, .outfit .forwomen{
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid yellowgreen;
+    border-radius: 20px;
+    padding: 20px 0;
+}
+.outfit .formen .top, .outfit .formen .middle, .outfit .formen .bottom{
+    text-align: center;
+    position: relative;
+}
+.outfit .forwomen .top, .outfit .forwomen .middle, .outfit .forwomen .bottom{
+    text-align: center;
+    position: relative;
+}
+.outfit .formen .top img, .outfit .forwomen .top img{
+    width: 20%;
+}
+.outfit .formen .middle img{
+    width: 58%;
+}
+.outfit .forwomen .middle img{
+    width: 50%;
+}
+.outfit .formen .bottom img, .outfit .forwomen .bottom img{
+    width: 23%;
+}
+.outfit .forwomen .bottom .blacklpant{
+    width: 40%;
+}
+.outfit .top .whitecap, .outfit .top .pinkcap, .outfit .middle .purpleshirt, .outfit .bottom .redshorts{
+    display: none;
+}
+.outfit .top .orangetopi, .outfit .top .peachtopi, .outfit .top .greytopi, .outfit .middle .blueltshirt, .outfit .middle .pinkltshirt, .outfit .bottom .whitelpant{
+    display: none;
+}
+
+
+
+
+.radio-color{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+.radio-color input[type="radio"]{
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+.radio-color label{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 2px;
+    border: 2px solid #0f0f0f;
+}
+.radio-color .bcap, .radio-color .bshirt, .radio-color .bshorts, .radio-color .bltshirt, .radio-color .blpant{
+    background-color: #000;
+}
+.radio-color .blltshirt{ background-color: cyan; }
+
+.radio-color .wcap, .radio-color .wlpant{ background-color: #fff; }
+
+.radio-color .pcap{ background-color: pink; }
+
+.radio-color .purshirt{ background-color: purple; }
+
+.radio-color .rshorts{ background-color: red; }
+
+.radio-color .btopi{ background-color: brown; }
+
+.radio-color .ptopi{ background-color: peachpuff; }
+
+.radio-color .otopi{ background-color: orange; }
+
+.radio-color .gtopi{ background-color: #dfdfdf; }
+
+.radio-color input[type="radio"]:focus + label{ border: 2px dashed #444; }
+
+.radio-color input[type="radio"]:checked + .checked-border{
+    border-color: #4c4;
+}
+
+/* input[type="radio"]:checked + label{                       IMPORTANT
+    css properties
+} */
+/* outfit-section ends */
+
+
+
+
+/* last-section starts */
+.last-section h5{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.last-section ul{
+    list-style-type: none;
+    text-align: left;
+    line-height: 38px;
+    color: brown;
+    font-size: 1.1rem;
+}
+/* last-section ends */
+
+/* footer starts */
+    footer{
+        color: grey;
+        font-size: 0.6rem;
+        border-top: 8px solid #000;
+        padding-top: 28px;
+    }
+    footer h6{
+        font-weight: 600;
+    }
+    footer p{
+        margin: 38px 0;
+    }
+    footer p i{
+        font-style: normal;
+    }
+    footer p span{
+        font-weight: 600;
+        line-height: 28px;
+    }
+    footer a{
+        font-size: 0.8rem;
+        color: grey;
+    }
+    footer a:hover{
+        color: grey;
+    }
+/* footer ends */
+
+/* designedby */
+.designedby{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 0 15px;
+    font-family: cursive;
+    font-weight: 600;
+    background-color: greenyellow;
+}
+.designedby .socialhandle{
+    display: flex;
+    align-items: center;
+}
+.designedby .socialhandle p{
+    margin-right: 8px;
+}
+.designedby .socialhandle span{
+    margin-right: 8px;
+    transition-duration: 500ms;
+    transition-property: transform;
+}
+.designedby .socialhandle span:hover{
+    transform: scale(1.1);
+}
+
+
+
+/* media query */
+@media only screen and (max-width:1024px){
+    html{
+        font-size: 15px;
+    }
+
+    .signin-register li{
+        list-style-type: none;
+        margin-right: 15px;
+    }
+    .signin-register li a{
+        font-size: 0.7rem;
+    }
+
+    .section-carousel{
+        top: -10px;
+    }
+
+    .outfit .formen, .outfit .forwomen{
+        width: 90%;
+    }
+    .radio-color label{
+        padding: 8px;
+        margin: 1px;
+    }
+
+    footer p span{
+        line-height: 20px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    html{
+        font-size: 12px;
+    }
+
+    .mybrand img{
+        width: 48%;
+    }
+
+    .inline{
+        align-items: center;
+    }
+    .user .signin-register{
+        justify-content: flex-end;
+    }
+
+    .navigation li{
+        padding: 8px 20px;
+    }
+
+    .outfit .formen, .outfit .forwomen{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:425px){
+    header aside{
+        display: block;
+    }
+
+    .mybrand img{
+        width: 28%;
+    }
+    nav{
+        flex-direction: column;
+        padding: 0 !important;
+    }
+    .user .signin-register{
+        line-height: 20px;
+    }
+    .just-a-div{
+        width: 100%;
+        display: none;
+    }
+    nav .navigation{
+        flex-flow: column wrap;
+    }
+    .navigation li{
+        margin-right: 0px;
+    }
+
+    .section-carousel{
+        top: 4px;
+    }
+
+    .outfit .formen, .outfit .forwomen{
+        border: 0;
+        border-radius: 0;
+    }
+    .radio-color p{
+        font-size: 1rem;
+    }
+
+    .last-section ul{
+        padding-left: 20px;
+    }
+
+    footer p{
+        margin: 28px 0;
+    }
+}
+
+@media only screen and (max-width:320px){
+
+    header aside{
+        top: 2px;
+        right: 2px;
+    }
+
+    .last-section ul{
+        padding-left: 0;
+        line-height: 24px;
+    }
+
+    footer p{
+        margin: 20px 0;
+    }
+
+    .designedby{
+        justify-content: center;
+    }
+}
